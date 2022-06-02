@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define TAM 2
+#define TAM 12 
 
 int main(){
     double mat[TAM][TAM];
@@ -16,12 +16,6 @@ int main(){
         }
     }
 
-    for(i=0; i < TAM; i++){
-        for(j=0; j < TAM; j++){
-            printf("%f", mat[i][j]);
-        }
-    }
-
     for(i = 0; i < TAM; i++){
         res = res + mat[i][col];
     }
@@ -29,4 +23,5 @@ int main(){
     if(operacao == 'M') res = res / i;
 
     printf("%.1lf\n", res);
+
 }
